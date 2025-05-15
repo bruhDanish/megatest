@@ -65,6 +65,14 @@ nav ul {
   display: none;
 }
 
+.portrait{
+  display: none;
+}
+
+.search-portait{
+  display: none;
+}
+
 .account i {
   font-size: 25px;
   cursor: pointer;
@@ -230,14 +238,28 @@ aside span:last-child{
 
 @media screen and (orientation: portrait) {
 
-
   .logo button{
     width: 80%;
   }
 
-  nav ul{
+  .landscape{
+    display: none;
+  }
+
+  .portrait{
+    display: block;
+  }
+
+  .portrait ul{
+    display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .portrait ul li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
   }
 
   .search input,button{
@@ -246,5 +268,22 @@ aside span:last-child{
   .search span{
     display: block;
   }
+  .search-portait{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+  }
 
+  article{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .course-cards{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  footer{
+    grid-template-columns: 1fr;
+  }
 }
