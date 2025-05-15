@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.search-account {
+  display: flex;
+  gap: 20px;
+}
+
+.search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search span{
+  display: none;
+}
+
+.account i {
+  font-size: 25px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+section {
+  margin: 40px 30px;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rev-card {
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: peachpuff;
+}
+
+.rev-card span {
+  font-size: 30px;
+  color: goldenrod;
+}
+
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1,
+p {
+  text-align: center;
+  line-height: 25px;
+}
+
+.navigation-bar {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: skyblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navigation-bar button {
+  padding: 10px;
+  background-color: #f6f6f6;
+  color: skyblue;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-bar button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.course-cards {
+  width: 80%;
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.info button {
+  font-size: 10px;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.info span {
+  color: red;
+}
+
+.review i {
+  color: goldenrod;
+}
+
+.lecture-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial;
+  display: grid;
+  grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+  padding: 10px;
+  place-items: center;
+}
+
+footer img{
+  width: 100px;
+}
+
+.footer-brand-name {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: normal;
+  color: gray;
+}
+
+aside span {
+  margin-right: 8px;
+}
+
+aside span:first-child{
+  color: blue
+}
+aside span:nth-child(2){
+  color: red
+}
+aside span:nth-child(3){
+  color: rgb(196, 9, 40)
+}
+aside span:last-child{
+  color: blue
+}
+
+.data ~ span {
+  display: block;
+  font-size: 10px;
+  color: gray;
+  padding: 5px 0;
+}
+
+.data {
+  padding-bottom: 8px;
+}
+
+@media screen and (orientation: portrait) {
+
+
+  .logo button{
+    width: 80%;
+  }
+
+  nav ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search input,button{
+    display: none;
+  }
+  .search span{
+    display: block;
+  }
+
+}
